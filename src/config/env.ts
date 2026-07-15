@@ -48,7 +48,7 @@ const envSchema = z.object({
   // ── Database ─────────────────────────────────────────────────────────────
   DATABASE_URL: z
     .string()
-    .url("DATABASE_URL must be a valid PostgreSQL connection string"),
+    .min(10, "DATABASE_URL is required"),
 
   // ── Upstash Redis ────────────────────────────────────────────────────────
   UPSTASH_REDIS_REST_URL: z.string().url("UPSTASH_REDIS_REST_URL is invalid"),
@@ -152,9 +152,10 @@ const envSchema = z.object({
 const parseResult = envSchema.safeParse(process.env);
 
 if (!parseResult.success) {
-  console.error("❌ Invalid environment variables:\n");
-  console.error(parseResult.error.format());
-  process.exit(1);
+  const errorMsg = `❌ Invalid environment variables:\n${JSON.stringify(parseResult.error.format(), null, 2)}`;
+  console.error(errorMsg);
+  // Throw instead of process.exit() — exit kills the serverless runtime
+  throw new Error(errorMsg);
 }
 
 /**
