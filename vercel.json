@@ -1,5 +1,7 @@
 {
   "version": 2,
+  "buildCommand": "echo 'Serverless bot - no frontend build'",
+  "outputDirectory": ".",
   "functions": {
     "api/webhook.ts": {
       "maxDuration": 60,
