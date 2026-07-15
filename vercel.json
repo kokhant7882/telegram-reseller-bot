@@ -5,17 +5,8 @@
     "api/webhook.ts": {
       "maxDuration": 60,
       "memory": 512
-    },
-    "api/cron/cleanup.ts": {
-      "maxDuration": 60
     }
   },
-  "crons": [
-    {
-      "path": "/api/cron/cleanup",
-      "schedule": "0 0 * * *"
-    }
-  ],
   "headers": [
     {
       "source": "/api/(.*)",
