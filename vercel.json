@@ -1,0 +1,52 @@
+{
+  "version": 2,
+  "name": "telegram-reseller-bot",
+  "buildCommand": "npm run build",
+  "functions": {
+    "api/webhook.ts": {
+      "maxDuration": 60,
+      "memory": 512
+    },
+    "api/cron/trc20.ts": {
+      "maxDuration": 60
+    },
+    "api/cron/notifications.ts": {
+      "maxDuration": 30
+    },
+    "api/cron/cleanup.ts": {
+      "maxDuration": 60
+    },
+    "api/payments/binance.ts": {
+      "maxDuration": 30
+    }
+  },
+  "crons": [
+    {
+      "path": "/api/cron/trc20",
+      "schedule": "*/5 * * * *"
+    },
+    {
+      "path": "/api/cron/notifications",
+      "schedule": "* * * * *"
+    },
+    {
+      "path": "/api/cron/cleanup",
+      "schedule": "0 0 * * *"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        }
+      ]
+    }
+  ]
+}

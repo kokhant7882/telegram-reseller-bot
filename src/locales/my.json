@@ -1,0 +1,109 @@
+{
+  "start": {
+    "welcome_new": "👋 မင်္ဂလာပါ! Telegram Reseller Bot မှ ကြိုဆိုပါသည်။\n\n📋 ဤ Bot နှင့် Digital Products များ ဝယ်ယူနိုင်ပါသည်။\n\nစတင်ရန် Register လုပ်ပါ:",
+    "welcome_back": "🏠 မင်္ဂလာပြန်လာပါသည်, {name}!\n\n💰 Wallet: {balance}\n\nဘာကူညီပေးရမည်နည်း?",
+    "banned": "🚫 သင့်အကောင့်ကို ပိတ်ထားပါသည်။\n\nReason: {reason}\n\nSupportသို့ ဆက်သွယ်ပါ: {support}"
+  },
+  "register": {
+    "enter_name": "📝 သင့်အမည် ရိုက်ထည့်ပါ:\n\n(Telegram ပေါ်တွင် ပြသမည့် နာမည်ဖြစ်ပါသည်)",
+    "name_invalid": "❌ အမည်မမှန်ကန်ပါ။ Letter နှင့် Space သာ သုံးနိုင်ပါသည်။",
+    "success": "✅ မှတ်ပုံတင်ပြီးပါပြီ!\n\nကြိုဆိုပါသည်, {name}!\n\n🔗 Referral Code: {code}\n\nသူငယ်ချင်းများကို ဖိတ်ခေါ်၍ {reward} MMK ရယူပါ!",
+    "already_registered": "⚠️ သင်သည် မှတ်ပုံတင်ပြီးသားဖြစ်ပါသည်။"
+  },
+  "menu": {
+    "main": "🏠 Main Menu",
+    "profile": "👤 Profile",
+    "wallet": "💳 Wallet",
+    "products": "🛍️ Products",
+    "orders": "📦 My Orders",
+    "redeem": "🎫 Redeem Code",
+    "notifications": "🔔 Notifications",
+    "support": "🆘 Support",
+    "settings": "⚙️ Settings",
+    "language": "🌐 Language",
+    "referral": "🔗 Referral",
+    "deposit": "➕ Deposit",
+    "history": "📋 History",
+    "back": "◀️ Back",
+    "home": "🏠 Home",
+    "refresh": "🔄 Refresh",
+    "confirm": "✅ Confirm",
+    "cancel": "❌ Cancel"
+  },
+  "wallet": {
+    "title": "💳 My Wallet",
+    "balance": "💰 Balance: {balance}",
+    "deposit_title": "➕ Deposit",
+    "deposit_select_method": "💳 Payment Method ရွေးချယ်ပါ:",
+    "deposit_enter_amount": "💵 Deposit Amount ရိုက်ထည့်ပါ (MMK):\n\nMin: {min} MMK\nMax: {max} MMK",
+    "deposit_amount_invalid": "❌ ပမာဏ မမှန်ကန်ပါ။ {min} - {max} MMK ကြားဖြစ်ရမည်။",
+    "deposit_instructions": "📋 ငွေပေးချေနည်း:\n\n{instructions}\n\n✅ ပေးချေပြီးနောက် Screenshot Upload လုပ်ပါ:",
+    "deposit_upload_screenshot": "🖼️ ငွေပေးချေမှု Screenshot Upload လုပ်ပါ:",
+    "deposit_pending": "⏳ ငွေဖြည့်မှု Pending ဖြစ်နေပါသည်။\n Admin မှ စစ်ဆေးပြီး Approve လုပ်ပါမည်။",
+    "deposit_approved": "✅ ငွေဖြည့်မှု အောင်မြင်ပါသည်!\n\nAmount: {amount}\nBalance: {balance}",
+    "deposit_rejected": "❌ ငွေဖြည့်မှု ငြင်းပယ်ခဲ့သည်။\n\nReason: {reason}",
+    "no_transactions": "📋 Transaction မရှိသေးပါ။",
+    "history_title": "📋 Transaction History"
+  },
+  "products": {
+    "title": "🛍️ Products",
+    "select_category": "📂 Category ရွေးချယ်ပါ:",
+    "no_categories": "📭 Category မရှိသေးပါ။",
+    "no_products": "📭 ဤ Category တွင် Product မရှိသေးပါ။",
+    "out_of_stock": "❌ ပစ္စည်းကုန်သွားပါပြီ။",
+    "buy_enter_quantity": "🔢 အရေအတွက် ရိုက်ထည့်ပါ (Stock: {stock}):",
+    "buy_confirm": "🛒 Order အတည်ပြုပါ:\n\nProduct: {name}\nQuantity: {qty}\nUnit Price: {price}\nTotal: {total}",
+    "buy_success_instant": "✅ ဝယ်ယူမှု အောင်မြင်ပါသည်!\n\nOrder ID: {orderId}\n\n🎁 သင့် Product:\n{deliveryData}",
+    "buy_success_manual": "✅ ဝယ်ယူမှု အောင်မြင်ပါသည်!\n\nOrder ID: {orderId}\n\n⏳ Admin မှ မကြာမီ Deliver လုပ်ပေးမည်။",
+    "insufficient_balance": "❌ Wallet Balance မလုံလောက်ပါ။\n\nRequired: {required}\nCurrent: {current}\n\nPlease deposit first.",
+    "search_placeholder": "🔍 Product Name ရိုက်ပါ:"
+  },
+  "orders": {
+    "title": "📦 My Orders",
+    "active_title": "⏳ Active Orders",
+    "history_title": "📋 Purchase History",
+    "no_orders": "📭 Order မရှိသေးပါ။",
+    "cancel_confirm": "❌ Order {orderId} ကို Cancel လုပ်မည်လား?",
+    "cancel_success": "✅ Order Cancel လုပ်ပြီးပါပြီ။ Balance Refund ဖြစ်ပါမည်။",
+    "cancel_not_allowed": "❌ ဤ Order ကို Cancel မလုပ်နိုင်ပါ။"
+  },
+  "referral": {
+    "title": "🔗 Referral System",
+    "your_code": "🎟️ သင့် Referral Code: {code}",
+    "your_link": "🔗 Referral Link:\n{link}",
+    "stats": "📊 Referral Statistics\n\nTotal Referred: {count} people\nTotal Earned: {earned} MMK",
+    "instructions": "💡 သူငယ်ချင်းများကို Bot မှာ Sign Up ဖိတ်ခေါ်ပါ\nတစ်ဦးစာ {reward} MMK ရမည်!"
+  },
+  "redeem": {
+    "enter_code": "🎫 Redeem Code ရိုက်ထည့်ပါ:",
+    "success": "✅ Code အောင်မြင်ပါသည်!\n\n{reward} MMK ကို Wallet သို့ ထည့်ပေးပါပြီ.",
+    "invalid": "❌ Code မမှန်ကန်ပါ သို့မဟုတ် သုံးပြီးဖြစ်ပါသည်။",
+    "expired": "❌ Code သက်တမ်းကုန်သွားပါပြီ။"
+  },
+  "support": {
+    "title": "🆘 Support",
+    "send_message": "✉️ Support Message ပို့ပါ:\n\nMessage ကို Admin ထံ တိုက်ရိုက်ရောက်ပါမည်။",
+    "message_sent": "✅ Message ပို့ပြီးပါပြီ!\n\nAdmin မှ မကြာမီ ဖြေကြားပါမည်။",
+    "faq": "❓ FAQ\n\n• Bot ကိုဘယ်လိုသုံးရမည်?\n• ငွေဖြည့်နည်း?\n• ပစ္စည်းဝယ်နည်?"
+  },
+  "language": {
+    "title": "🌐 Language / ဘာသာစကား",
+    "select": "ဘာသာစကားရွေးချယ်ပါ:",
+    "changed": "✅ ဘာသာစကားပြောင်းလဲပြီးပါပြီ!"
+  },
+  "errors": {
+    "generic": "❌ Error တစ်ခု ဖြစ်ပေါ်ခဲ့သည်။ ထပ်မံကြိုးစားပါ။",
+    "not_found": "❌ ရှာမတွေ့ပါ။",
+    "unauthorized": "⛔ ဤ Action ကို ခွင့်မပြုပါ။",
+    "rate_limit": "⏳ လျင်မြန်လွန်းသည်! {seconds} seconds ခဏစောင့်ပါ။",
+    "maintenance": "🔧 Bot ကို Maintenance လုပ်နေပါသည်။ မကြာမီ ပြန်လည် အသုံးပြုနိုင်ပါမည်။"
+  },
+  "admin": {
+    "dashboard_title": "👑 Admin Dashboard",
+    "stats": "📊 Bot Statistics\n\nUsers: {users}\nResellers: {resellers}\nToday Orders: {orders}\nToday Revenue: {revenue}\nPending Payments: {pending}"
+  },
+  "reseller": {
+    "dashboard_title": "🏪 Reseller Dashboard",
+    "stats": "📊 My Statistics\n\nTotal Sales: {sales}\nTotal Profit: {profit}\nCustomers: {customers}\nActive Orders: {orders}"
+  }
+}

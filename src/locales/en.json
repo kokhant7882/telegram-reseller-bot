@@ -1,0 +1,109 @@
+{
+  "start": {
+    "welcome_new": "👋 Welcome to Reseller Bot!\n\n📋 Buy premium digital products easily.\n\nTap Register to get started:",
+    "welcome_back": "🏠 Welcome back, {name}!\n\n💰 Wallet: {balance}\n\nWhat can I help you with?",
+    "banned": "🚫 Your account has been suspended.\n\nReason: {reason}\n\nContact support: {support}"
+  },
+  "register": {
+    "enter_name": "📝 Enter your display name:",
+    "name_invalid": "❌ Invalid name. Use only letters and spaces.",
+    "success": "✅ Registration successful!\n\nWelcome, {name}!\n\n🔗 Referral Code: {code}\n\nEarn {reward} MMK per referral!",
+    "already_registered": "⚠️ You are already registered."
+  },
+  "menu": {
+    "main": "🏠 Main Menu",
+    "profile": "👤 Profile",
+    "wallet": "💳 Wallet",
+    "products": "🛍️ Products",
+    "orders": "📦 My Orders",
+    "redeem": "🎫 Redeem Code",
+    "notifications": "🔔 Notifications",
+    "support": "🆘 Support",
+    "settings": "⚙️ Settings",
+    "language": "🌐 Language",
+    "referral": "🔗 Referral",
+    "deposit": "➕ Deposit",
+    "history": "📋 History",
+    "back": "◀️ Back",
+    "home": "🏠 Home",
+    "refresh": "🔄 Refresh",
+    "confirm": "✅ Confirm",
+    "cancel": "❌ Cancel"
+  },
+  "wallet": {
+    "title": "💳 My Wallet",
+    "balance": "💰 Balance: {balance}",
+    "deposit_title": "➕ Deposit",
+    "deposit_select_method": "💳 Select payment method:",
+    "deposit_enter_amount": "💵 Enter deposit amount (MMK):\n\nMin: {min} MMK\nMax: {max} MMK",
+    "deposit_amount_invalid": "❌ Invalid amount. Must be between {min} - {max} MMK.",
+    "deposit_instructions": "📋 Payment Instructions:\n\n{instructions}\n\n✅ After payment, upload your screenshot:",
+    "deposit_upload_screenshot": "🖼️ Upload your payment screenshot:",
+    "deposit_pending": "⏳ Deposit pending.\nAdmin will review and approve shortly.",
+    "deposit_approved": "✅ Deposit approved!\n\nAmount: {amount}\nBalance: {balance}",
+    "deposit_rejected": "❌ Deposit rejected.\n\nReason: {reason}",
+    "no_transactions": "📋 No transactions yet.",
+    "history_title": "📋 Transaction History"
+  },
+  "products": {
+    "title": "🛍️ Products",
+    "select_category": "📂 Select a category:",
+    "no_categories": "📭 No categories available yet.",
+    "no_products": "📭 No products in this category yet.",
+    "out_of_stock": "❌ Out of stock.",
+    "buy_enter_quantity": "🔢 Enter quantity (Stock: {stock}):",
+    "buy_confirm": "🛒 Confirm Order:\n\nProduct: {name}\nQuantity: {qty}\nUnit Price: {price}\nTotal: {total}",
+    "buy_success_instant": "✅ Purchase successful!\n\nOrder ID: {orderId}\n\n🎁 Your product:\n{deliveryData}",
+    "buy_success_manual": "✅ Purchase successful!\n\nOrder ID: {orderId}\n\n⏳ Admin will deliver your order shortly.",
+    "insufficient_balance": "❌ Insufficient wallet balance.\n\nRequired: {required}\nCurrent: {current}\n\nPlease deposit first.",
+    "search_placeholder": "🔍 Enter product name:"
+  },
+  "orders": {
+    "title": "📦 My Orders",
+    "active_title": "⏳ Active Orders",
+    "history_title": "📋 Purchase History",
+    "no_orders": "📭 No orders yet.",
+    "cancel_confirm": "❌ Cancel order {orderId}?",
+    "cancel_success": "✅ Order cancelled. Balance refunded.",
+    "cancel_not_allowed": "❌ This order cannot be cancelled."
+  },
+  "referral": {
+    "title": "🔗 Referral System",
+    "your_code": "🎟️ Your Referral Code: {code}",
+    "your_link": "🔗 Referral Link:\n{link}",
+    "stats": "📊 Referral Statistics\n\nTotal Referred: {count} people\nTotal Earned: {earned} MMK",
+    "instructions": "💡 Invite friends to join the bot.\nEarn {reward} MMK for each signup!"
+  },
+  "redeem": {
+    "enter_code": "🎫 Enter your redeem code:",
+    "success": "✅ Code redeemed successfully!\n\n{reward} MMK added to your wallet.",
+    "invalid": "❌ Invalid code or already used.",
+    "expired": "❌ Code has expired."
+  },
+  "support": {
+    "title": "🆘 Support",
+    "send_message": "✉️ Send us a message:\n\nIt will be forwarded directly to our admin team.",
+    "message_sent": "✅ Message sent!\nWe'll respond shortly.",
+    "faq": "❓ FAQ\n\n• How to deposit?\n• How to buy products?\n• How long does delivery take?"
+  },
+  "language": {
+    "title": "🌐 Language",
+    "select": "Select your preferred language:",
+    "changed": "✅ Language updated!"
+  },
+  "errors": {
+    "generic": "❌ An error occurred. Please try again.",
+    "not_found": "❌ Not found.",
+    "unauthorized": "⛔ You don't have permission for this action.",
+    "rate_limit": "⏳ Too fast! Please wait {seconds} seconds.",
+    "maintenance": "🔧 Bot is under maintenance. Please check back soon."
+  },
+  "admin": {
+    "dashboard_title": "👑 Admin Dashboard",
+    "stats": "📊 Bot Statistics\n\nUsers: {users}\nResellers: {resellers}\nToday Orders: {orders}\nToday Revenue: {revenue}\nPending Payments: {pending}"
+  },
+  "reseller": {
+    "dashboard_title": "🏪 Reseller Dashboard",
+    "stats": "📊 My Statistics\n\nTotal Sales: {sales}\nTotal Profit: {profit}\nCustomers: {customers}\nActive Orders: {orders}"
+  }
+}
